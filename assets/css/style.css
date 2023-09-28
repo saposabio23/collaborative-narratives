@@ -66,8 +66,6 @@ html {
     box-sizing: border-box;
 }
 
-body {}
-
 /******************* TEXTE SELECTOR *******************/
 ::-moz-selection {
     background-color: var(--color-special);
@@ -476,9 +474,6 @@ label {
 .fountain p {
     color: var(--color-primary);
 }
-
-
-.blur {}
 
 .blur:hover {
     -webkit-filter: blur(3px);

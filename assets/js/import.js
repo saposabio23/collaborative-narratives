@@ -70,7 +70,7 @@ function launchGrid() {
           grid.setAttribute("data-type", row.Type);
 
           let thumbnail = document.createElement("img");
-          thumbnail.src = 'images/' + row.Title + '.webp';
+          thumbnail.src = 'images/' + row.Title + '.jpg';
           grid.appendChild(thumbnail);
 
           fountain.appendChild(grid);
@@ -131,10 +131,11 @@ function createBlock(row) {
     title.innerHTML = row.Title;
     headerBlock.appendChild(title)
 
-    let description = document.createElement("p");
-    description.innerHTML = row.Description;
-    block.appendChild(description)
-
+    if (row.Description != 'undefined') {
+      let description = document.createElement("p");
+      description.innerHTML = row.Description;
+      block.appendChild(description)
+    }
 
     aditionalElements(row, block)
   }
@@ -152,12 +153,18 @@ function createBlock(row) {
     headerBlock.appendChild(title)
 
     let source = document.createElement("img");
-    source.src = 'images/' + row.Title + '.webp';
+    source.src = 'images/' + row.Title + '.jpg';
     block.appendChild(source)
+    
+    if (row.Description != 'undefined') {
+      let description = document.createElement("p");
+      description.innerHTML = row.Description;
+      block.appendChild(description)
+    }
+    else{
 
-    let description = document.createElement("p");
-    description.innerHTML = row.Description;
-    block.appendChild(description)    
+    }
+
 
     aditionalElements(row, block)
 
@@ -179,6 +186,12 @@ function createBlock(row) {
     video.appendChild(source)
     block.appendChild(video)
 
+    if (row.Description != 'undefined') {
+      let description = document.createElement("p");
+      description.innerHTML = row.Description;
+      block.appendChild(description)
+    }
+
     aditionalElements(row, block)
   }
 }
@@ -196,21 +209,29 @@ function aditionalElements(row, block) {
   peopleTitle.innerHTML = 'People:';
   headerPeople.appendChild(peopleTitle)
 
-  let people1 = document.createElement("span");
-  people1.innerHTML = row.People1;
-  headerPeople.appendChild(people1)
+  if (row.People1 != '') {
+    let people1 = document.createElement("span");
+    people1.innerHTML = row.People1;
+    headerPeople.appendChild(people1)
+  }
 
-  let people2 = document.createElement("span");
-  people2.innerHTML = row.People2;
-  headerPeople.appendChild(people2)
+  if (row.People2 != '') {
+    let people2 = document.createElement("span");
+    people2.innerHTML = row.People2;
+    headerPeople.appendChild(people2)
+  }
 
-  let people3 = document.createElement("span");
-  people3.innerHTML = row.People3;
-  headerPeople.appendChild(people3)
+  if (row.People3 != '') {
+    let people3 = document.createElement("span");
+    people3.innerHTML = row.People3;
+    headerPeople.appendChild(people3)
+  }
 
-  let people4 = document.createElement("span");
-  people4.innerHTML = row.People4;
-  headerPeople.appendChild(people4)
+  if (row.People4 != '') {
+    let people4 = document.createElement("span");
+    people4.innerHTML = row.People4;
+    headerPeople.appendChild(people4)
+  }
 
   let headerplace = document.createElement("div");
   headerplace.className = 'headerInfos';
@@ -260,6 +281,7 @@ function cleanBlocks() {
   numbersOfBlock = 0;
   document.getElementById('cleanCounter').innerHTML = '(' + numbersOfBlock + ')'
   var elements = document.querySelectorAll('.block');
+  magic.play();
   for (let i = 0, max = elements.length; i < max; i++) {
     elements[i].remove();
   }
@@ -297,6 +319,7 @@ function toggleCategories(e) {
 function checkCategories(e) {
   var elm = document.getElementById('check' + e.id);
   elm.click();
+  button.play();
 }
 
 
