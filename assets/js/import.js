@@ -36,7 +36,7 @@ function launchGrid() {
       }
 
       shuffle(newData);
-      console.log(newData);
+      // console.log(newData);
 
 
       newData.forEach((row) => {
