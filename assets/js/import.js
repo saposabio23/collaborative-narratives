@@ -13,6 +13,7 @@ function launchGrid() {
     .then((res) => res.json())
     .then((data) => {
 
+
       newData = data.concat(emptydata);
 
       function shuffle(newData) {
@@ -69,7 +70,7 @@ function launchGrid() {
           grid.setAttribute("data-type", row.Type);
 
           let thumbnail = document.createElement("img");
-          thumbnail.src = 'images/' + row.Title + '.jpg';
+          thumbnail.src = 'images/' + row.Title + '.webp';
           grid.appendChild(thumbnail);
 
           fountain.appendChild(grid);
@@ -151,7 +152,7 @@ function createBlock(row) {
     headerBlock.appendChild(title)
 
     let source = document.createElement("img");
-    source.src = 'images/' + row.Title + '.jpg';
+    source.src = 'images/' + row.Title + '.webp';
     block.appendChild(source)
 
     let description = document.createElement("p");
@@ -280,7 +281,8 @@ addEventListener("keydown", (event) => {
 
 function toggleCategories(e) {
   var elements = document.querySelectorAll('.' + e.name);
-  console.log(e.name)
+  var empty = document.querySelectorAll('.empty');
+  // console.log(e.name)
   if (document.getElementById(e.id).checked) {
     for (let i = 0, max = elements.length; i < max; i++) {
       elements[i].style.opacity = '1';
@@ -297,26 +299,6 @@ function checkCategories(e) {
   elm.click();
 }
 
-
-
-function togglePeople(e) {
-  var elements = document.querySelectorAll('.' + e.name);
-  console.log(e.name)
-  if (document.getElementById(e.id).checked) {
-    for (let i = 0, max = elements.length; i < max; i++) {
-      elements[i].style.opacity = '1';
-    }
-  } else {
-    for (let i = 0, max = elements.length; i < max; i++) {
-      elements[i].style.opacity = '0';
-    }
-  }
-}
-
-function checkPeople(e) {
-  var elm = document.getElementById('check' + e.id);
-  elm.click();
-}
 
 // Black and white interface switch
 let root = document.body;
@@ -352,7 +334,7 @@ var rotate = 0;
 var isPaused = false;
 let interval = 30;
 
-console.log(time)
+// console.log(time)
 
 function stateScroll() {
   if (isPaused == true) {
@@ -368,8 +350,8 @@ function stateScroll() {
 function startScroll() {
   var fountain = document.querySelector('.fountain')
   let fountainHeight = ((fountain.offsetHeight) * -1);
-  console.log('Fountain height:', fountainHeight)
-  console.log('Window height:', time)
+  // console.log('Fountain height:', fountainHeight)
+  // console.log('Window height:', time)
 
   setInterval(function () {
     if (!isPaused) {
@@ -403,11 +385,7 @@ addEventListener("keydown", (event) => {
 function start() {
   startScroll();
 
-  let secondBack = document.createElement("div");
-  secondBack.className = 'secondBack';
-  document.body.appendChild(secondBack)
-
-  document.querySelector('.header').style.display = "flex";
+  document.querySelector('.secondBack').style.display = "block";
 
   rotateGadget.classList.add('fade')
   document.querySelector('.background > div').classList.add('erase')

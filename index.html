@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CONCLUDED</title>
+    <title>Collaborative Narratives</title>
 
-    <meta name="title" content="Pelote de Fils Rouges">
+    <meta name="title" content="Collaborative Narratives">
     <meta name="description"
-        content="Projection de courts-metrages des étudiant·e·s de Waide Somme le 22/09/23 à la MCA d'Amiens.">
+        content="Our project emphasizes limitless creativity, blurring the lines between final output and ongoing
+        evolution, and promoting holistic growth guided by principles of communication, documentation, humility,
+        action, reflection, environmental consciousness, and global collaboration.">
     <meta name="author" content="Pablo Moreno">
-    <link rel="canonical" href="https://fils-rouges.online">
+    <link rel="canonical" href="https://collaborative-narratives.online/">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,10 +30,14 @@
 
 <body>
 
+    <div class="secondBack"></div>
+
     <div class="background">
         <div>
             <h1>COLLABORATIVE NARRATIVES</h1>
-            <p>Our project emphasizes limitless creativity, blurring the lines between final output and ongoing evolution, and promoting holistic growth guided by principles of communication, documentation, humility, action, reflection, environmental consciousness, and global collaboration.</p>
+            <p>Our project emphasizes limitless creativity, blurring the lines between final output and ongoing
+                evolution, and promoting holistic growth guided by principles of communication, documentation, humility,
+                action, reflection, environmental consciousness, and global collaboration.</p>
         </div>
 
         <div id="rotateGadget" onclick="start()" src="assets/logos/✶.svg">
@@ -32,52 +45,58 @@
     </div>
 
     <div class="header">
-
         <div>
             <div class="filter categoryFilter">
                 <div class="selector">
                     <div class="selection">
-                        <div class="selectorButton" onclick="checkPeople(this)" id="Reference">
-                            <input type="checkbox" id="checkReference" name="Reference" onclick="togglePeople(this)"
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Storyline">
+                            <input type="checkbox" id="checkStoryline" name="Storyline" onclick="toggleCategories(this)"
+                                checked />
+                            <label>Storyline</label>
+                        </div>
+                        <span>✶ Is the narration between each participant, focusing on the alignment of concepts and
+                            practice through creative ways of narration
+
+                        </span>
+                    </div>
+
+                    <div class="selection">
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Reference">
+                            <input type="checkbox" id="checkReference" name="Reference" onclick="toggleCategories(this)"
                                 checked />
                             <label>References</label>
                         </div>
-                        <span>☞</span>
+                        <span>✶ Virtual and real material for research work and cross references to other people’s work
+                            (inside / outside of the group)</span>
                     </div>
 
+
                     <div class="selection">
-                        <div class="selectorButton" onclick="checkPeople(this)" id="Storyline">
-                            <input type="checkbox" id="checkStoryline" name="Storyline" onclick="togglePeople(this)"
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Material">
+                            <input type="checkbox" id="checkMaterial" name="Material" onclick="toggleCategories(this)"
                                 checked />
-                            <label>Storylines</label>
+                            <label>Material</label>
                         </div>
-                        <span>☞</span>
+                        <span>✶ Collected material, which is used for the work, non-virtual things, can be as well
+                            created throughout the Development of projects</span>
                     </div>
 
                     <div class="selection">
-                        <div class="selectorButton" onclick="checkPeople(this)" id="Material">
-                            <input type="checkbox" id="checkMaterial" name="Material" onclick="togglePeople(this)"
-                                checked />
-                            <label>Materials</label>
-                        </div>
-                        <span>☞</span>
-                    </div>
-
-                    <div class="selection">
-                        <div class="selectorButton" onclick="checkPeople(this)" id="Developpement">
-                            <input type="checkbox" id="checkDeveloppement" name="Developpement" onclick="togglePeople(this)"
-                                checked />
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Developpement">
+                            <input type="checkbox" id="checkDeveloppement" name="Developpement"
+                                onclick="toggleCategories(this)" checked />
                             <label>Developpement</label>
                         </div>
-                        <span>☞</span>
+                        <span>✶ Precise process for the development of specific projects, sketches etc.</span>
                     </div>
 
                     <div class="selection">
-                        <div class="selectorButton" onclick="checkPeople(this)" id="Final">
-                            <input type="checkbox" id="checkFinal" name="Final" onclick="togglePeople(this)" checked />
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Final">
+                            <input type="checkbox" id="checkFinal" name="Final" onclick="toggleCategories(this)" checked />
                             <label>Finals</label>
                         </div>
-                        <span>☞ Are the first images, ideas, photos from outside the projet.</span>
+                        <span>✶ Finalized Projects of a creative person: can be further developed and are then back in
+                            development stage</span>
                     </div>
                 </div>
                 <button id="catButton">CATEGORIES&nbsp;<span>▲</span></button>
@@ -96,7 +115,10 @@
             <div class="filter peopleFilter">
                 <div class="selector">
                     <div class="selection">
-                        <span>☞</span>
+                        <span>Tim Keuschnig is an Austrian/German Fashion Designer, living in Berlin. He studied at the
+                            University of the Arts Berlin and the National School of Decorative Arts in Paris fashion
+                            design. Working early on his brand Concluded fosters his interest in collaboration and which
+                            formed the next program, Collaborative Narratives ✶</span>
                         <div class="selectorButton" onclick="checkCategories(this)" id="Tim">
                             <label>Tim Keuschnig</label>
                             <input type="checkbox" id="checkTim" name="Tim" onclick="toggleCategories(this)" checked />
@@ -104,7 +126,10 @@
                     </div>
 
                     <div class="selection">
-                        <span>☞</span>
+                        <span>Yu Lu is a performance artist originally from China. After studying fashion at the Esmod
+                            Berlin she transferred her practice into the fine arts. There she is exploring the field of
+                            labor and concentrating her practice and master thesis on the Topic of the Female Plumber
+                            ✶</span>
                         <div class="selectorButton" onclick="checkCategories(this)" id="Yu">
                             <label>Yu Lu</label>
                             <input type="checkbox" id="checkYu" name="Yu" onclick="toggleCategories(this)" checked />
@@ -112,7 +137,9 @@
                     </div>
 
                     <div class="selection">
-                        <span>☞</span>
+                        <span>Till Zettl is a hairdresser who formed his practice at the globally renowned Salon Sassoon
+                            in Munich, he continued to work on for various prestige haircutters in Munich and moved to
+                            Berlin in 2023 to start at Kurkowitz ✶</span>
                         <div class="selectorButton" onclick="checkCategories(this)" id="Till">
                             <label>Till Zettl</label>
                             <input type="checkbox" id="checkTill" name="Till" onclick="toggleCategories(this)"
@@ -121,7 +148,8 @@
                     </div>
 
                     <div class="selection">
-                        <span>☞</span>
+                        <span>Paula Breuer is Painter from West Germany who studied Fine Arts at Kunsthochschule
+                            Weißensee Berlin and held various exhibition about her work across Europe ✶</span>
                         <div class="selectorButton" onclick="checkCategories(this)" id="Laura">
                             <label>Paula Breuer</label>
                             <input type="checkbox" id="checkLaura" name="Laura" onclick="toggleCategories(this)"
@@ -130,165 +158,16 @@
                     </div>
 
                     <div class="selection">
-                        <span>☞</span>
+                        <span>Anton Floth is an Austrian cook who took his formation under the renowned restaurant Mraz
+                            & Sohn in Vienna. After moving he moved to Berlin to start working at Barra Berlin. He works
+                            as Sue Chef and the field of contemporary food. His next endeavor is to work for Stoke a
+                            famous Yakitori Restaurant which works between Bangkok and Berlin ✶</span>
                         <div class="selectorButton" onclick="checkCategories(this)" id="Anton">
                             <label>Anton Floth</label>
                             <input type="checkbox" id="checkAnton" name="Anton" onclick="toggleCategories(this)"
                                 checked />
                         </div>
                     </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="NJ">
-                            <label>N. J. Isreal</label>
-                            <input type="checkbox" id="checkNJ" name="NJ" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Die">
-                            <label>Die Modenwelt</label>
-                            <input type="checkbox" id="checkDie" name="Die" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Gia">
-                            <label>Gia Söder</label>
-                            <input type="checkbox" id="checkGia" name="Gia" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Nikolaus">
-                            <label>Nikolaus Brade</label>
-                            <input type="checkbox" id="checkNikolaus" name="Nikolaus" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Laura">
-                            <label>Laura Schäffer</label>
-                            <input type="checkbox" id="checkLaura" name="Laura" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Yuiptaze">
-                            <label>Yuiptaze</label>
-                            <input type="checkbox" id="checkYuiptaze" name="Yuiptaze" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Ludwig">
-                            <label>Ludwig</label>
-                            <input type="checkbox" id="checkLudwig" name="Ludwig" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Kumasch">
-                            <label>Kumasch Stoffe</label>
-                            <input type="checkbox" id="checkKumasch" name="Kumasch" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Lena">
-                            <label>Lena Kleinert</label>
-                            <input type="checkbox" id="checkLena" name="Lena" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Hanna">
-                            <label>Hanna Trachten</label>
-                            <input type="checkbox" id="checkHanna" name="Hanna" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="FJ">
-                            <label>F.J. Miller</label>
-                            <input type="checkbox" id="checkFJ" name="FJ" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Pablo">
-                            <label>Pablo Moreno</label>
-                            <input type="checkbox" id="checkPablo" name="Pablo" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Alec">
-                            <label>Alec Baldin</label>
-                            <input type="checkbox" id="checkAlec" name="Alec" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Jan">
-                            <label>Jan Penka</label>
-                            <input type="checkbox" id="checkJan" name="Jan" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Kim">
-                            <label>Kim Kleinert</label>
-                            <input type="checkbox" id="checkKim" name="Kim" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-
-                    <div class="selection">
-                        <span>☞</span>
-                        <div class="selectorButton" onclick="checkCategories(this)" id="Janik">
-                            <label>Janik Somerfeldt</label>
-                            <input type="checkbox" id="checkJanik" name="Janik" onclick="toggleCategories(this)"
-                                checked />
-                        </div>
-                    </div>
-
-
                 </div>
                 <button id="catButton"><span>▲</span>&nbsp;PEOPLE</button>
             </div>
