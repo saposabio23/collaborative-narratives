@@ -1,4 +1,4 @@
-console.log('Handmade by Pablo Moreno ⚡️ www.pablo.energy ')
+console.log('Handmade by Pablo Moreno ⚡️ www.pablo.energy ⚡️ september 2023')
 
 var rotateGadget = document.getElementById('rotateGadget');
 var content = document.querySelector('.content');
