@@ -71,7 +71,7 @@ function launchGrid() {
           grid.setAttribute("data-type", row.Type);
 
           let thumbnail = document.createElement("img");
-          thumbnail.src = 'images/' + row.Title + '.jpg';
+          thumbnail.src = 'thumbnails/' + row.Title + '.jpg';
           grid.appendChild(thumbnail);
 
           fountain.appendChild(grid);
@@ -289,7 +289,7 @@ function cleanBlocks() {
 }
 
 addEventListener("keydown", (event) => {
-  if (event.which == 8 || event.keyCode == 8) {
+  if (event.which == 27 || event.keyCode == 27) {
     cleanBlocks();
     document.getElementById('buttonClean').classList.add('kicked')
     setTimeout(() => {
