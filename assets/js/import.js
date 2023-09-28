@@ -1,3 +1,5 @@
+console.log('Handmade by Pablo Moreno ⚡️ www.pablo.energy ')
+
 var rotateGadget = document.getElementById('rotateGadget');
 var content = document.querySelector('.content');
 
@@ -12,7 +14,6 @@ function launchGrid() {
     "https://opensheet.elk.sh/1IFYgWa27f1VhCskcDEsuCo40eLTc1djdonULdSEGX6Q/1")
     .then((res) => res.json())
     .then((data) => {
-
 
       newData = data.concat(emptydata);
 
