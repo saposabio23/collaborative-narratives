@@ -1,0 +1,6 @@
+- repair pause by (space)
+- 
+
+
+- sound remove block
+- change clean switcher

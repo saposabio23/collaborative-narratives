@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CONCLUDED</title>
+
+    <meta name="title" content="Pelote de Fils Rouges">
+    <meta name="description"
+        content="Projection de courts-metrages des étudiant·e·s de Waide Somme le 22/09/23 à la MCA d'Amiens.">
+    <meta name="author" content="Pablo Moreno">
+    <link rel="canonical" href="https://fils-rouges.online">
+
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div>
+            <h1>COLLABORATIVE NARRATIVES</h1>
+            <p>Our project emphasizes limitless creativity, blurring the lines between final output and ongoing evolution, and promoting holistic growth guided by principles of communication, documentation, humility, action, reflection, environmental consciousness, and global collaboration.</p>
+        </div>
+
+        <div id="rotateGadget" onclick="start()" src="assets/logos/✶.svg">
+        </div>
+    </div>
+
+    <div class="header">
+
+        <div>
+            <div class="filter categoryFilter">
+                <div class="selector">
+                    <div class="selection">
+                        <div class="selectorButton" onclick="checkPeople(this)" id="Reference">
+                            <input type="checkbox" id="checkReference" name="Reference" onclick="togglePeople(this)"
+                                checked />
+                            <label>References</label>
+                        </div>
+                        <span>☞</span>
+                    </div>
+
+                    <div class="selection">
+                        <div class="selectorButton" onclick="checkPeople(this)" id="Storyline">
+                            <input type="checkbox" id="checkStoryline" name="Storyline" onclick="togglePeople(this)"
+                                checked />
+                            <label>Storylines</label>
+                        </div>
+                        <span>☞</span>
+                    </div>
+
+                    <div class="selection">
+                        <div class="selectorButton" onclick="checkPeople(this)" id="Material">
+                            <input type="checkbox" id="checkMaterial" name="Material" onclick="togglePeople(this)"
+                                checked />
+                            <label>Materials</label>
+                        </div>
+                        <span>☞</span>
+                    </div>
+
+                    <div class="selection">
+                        <div class="selectorButton" onclick="checkPeople(this)" id="Developpement">
+                            <input type="checkbox" id="checkDeveloppement" name="Developpement" onclick="togglePeople(this)"
+                                checked />
+                            <label>Developpement</label>
+                        </div>
+                        <span>☞</span>
+                    </div>
+
+                    <div class="selection">
+                        <div class="selectorButton" onclick="checkPeople(this)" id="Final">
+                            <input type="checkbox" id="checkFinal" name="Final" onclick="togglePeople(this)" checked />
+                            <label>Finals</label>
+                        </div>
+                        <span>☞ Are the first images, ideas, photos from outside the projet.</span>
+                    </div>
+                </div>
+                <button id="catButton">CATEGORIES&nbsp;<span>▲</span></button>
+            </div>
+        </div>
+
+        <div class="fixHeader">
+            <!-- <button onclick="restarGrid()" id="randomButton">Random</button> -->
+            <button onclick="switchColors()" id="buttonSwitch">SWITCH<span>[s]</span></button>
+            <button onclick="cleanBlocks()" id="buttonClean">CLEAN&nbsp;<div id="cleanCounter">(0)</div>
+                <span>[backspace]</span></button>
+            <button onclick="stateScroll()" id="buttonPlay">PAUSE<span>[space]</span></button>
+        </div>
+
+        <div>
+            <div class="filter peopleFilter">
+                <div class="selector">
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Tim">
+                            <label>Tim Keuschnig</label>
+                            <input type="checkbox" id="checkTim" name="Tim" onclick="toggleCategories(this)" checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Yu">
+                            <label>Yu Lu</label>
+                            <input type="checkbox" id="checkYu" name="Yu" onclick="toggleCategories(this)" checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Till">
+                            <label>Till Zettl</label>
+                            <input type="checkbox" id="checkTill" name="Till" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Laura">
+                            <label>Paula Breuer</label>
+                            <input type="checkbox" id="checkLaura" name="Laura" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Anton">
+                            <label>Anton Floth</label>
+                            <input type="checkbox" id="checkAnton" name="Anton" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="NJ">
+                            <label>N. J. Isreal</label>
+                            <input type="checkbox" id="checkNJ" name="NJ" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Die">
+                            <label>Die Modenwelt</label>
+                            <input type="checkbox" id="checkDie" name="Die" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Gia">
+                            <label>Gia Söder</label>
+                            <input type="checkbox" id="checkGia" name="Gia" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Nikolaus">
+                            <label>Nikolaus Brade</label>
+                            <input type="checkbox" id="checkNikolaus" name="Nikolaus" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Laura">
+                            <label>Laura Schäffer</label>
+                            <input type="checkbox" id="checkLaura" name="Laura" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Yuiptaze">
+                            <label>Yuiptaze</label>
+                            <input type="checkbox" id="checkYuiptaze" name="Yuiptaze" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Ludwig">
+                            <label>Ludwig</label>
+                            <input type="checkbox" id="checkLudwig" name="Ludwig" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Kumasch">
+                            <label>Kumasch Stoffe</label>
+                            <input type="checkbox" id="checkKumasch" name="Kumasch" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Lena">
+                            <label>Lena Kleinert</label>
+                            <input type="checkbox" id="checkLena" name="Lena" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Hanna">
+                            <label>Hanna Trachten</label>
+                            <input type="checkbox" id="checkHanna" name="Hanna" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="FJ">
+                            <label>F.J. Miller</label>
+                            <input type="checkbox" id="checkFJ" name="FJ" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Pablo">
+                            <label>Pablo Moreno</label>
+                            <input type="checkbox" id="checkPablo" name="Pablo" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Alec">
+                            <label>Alec Baldin</label>
+                            <input type="checkbox" id="checkAlec" name="Alec" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Jan">
+                            <label>Jan Penka</label>
+                            <input type="checkbox" id="checkJan" name="Jan" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Kim">
+                            <label>Kim Kleinert</label>
+                            <input type="checkbox" id="checkKim" name="Kim" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+
+                    <div class="selection">
+                        <span>☞</span>
+                        <div class="selectorButton" onclick="checkCategories(this)" id="Janik">
+                            <label>Janik Somerfeldt</label>
+                            <input type="checkbox" id="checkJanik" name="Janik" onclick="toggleCategories(this)"
+                                checked />
+                        </div>
+                    </div>
+
+
+                </div>
+                <button id="catButton"><span>▲</span>&nbsp;PEOPLE</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+    <div class="content"></div>
+
+    <audio id="sound" src="assets/sound.mp3" preload="auto"></audio>
+
+    <script id="script" src="assets/js/emptydata.js"></script>
+    <script id="script" src="assets/js/import.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,557 @@
+[
+    {
+        "Title": "The good",
+        "People": "Tim",
+        "Type": "Image",
+        "Thumbnail": "The good",
+        "Source": "The good",
+        "Category": "Final",
+        "Description": "Arsjad Rasjid (born 16 March 1970) is an Indonesian businessman who is president director of the mining and energy firm Indika Energy [id]. ",
+        "Link1": "The bad",
+        "Link2": "Three",
+        "Link3": "One"
+    },
+    {
+        "Title": "The bad",
+        "People": "Till",
+        "Type": "Text",
+        "Thumbnail": "The bad",
+        "Source": "The bad",
+        "Category": "Reference"
+    },
+    {
+        "Title": "Title test 3",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img3",
+        "Source": "img3",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 4",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img4",
+        "Source": "img4",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 5",
+        "People": "Till",
+        "Type": "Video",
+        "Thumbnail": "img5",
+        "Source": "img5",
+        "Category": "Material",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Title test 6",
+        "People": "Till",
+        "Type": "Video",
+        "Thumbnail": "img6",
+        "Source": "img6",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 7",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img7",
+        "Source": "img7",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 8",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img8",
+        "Source": "img8",
+        "Category": "Final",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 9",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img9",
+        "Source": "img9",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 10",
+        "People": "Yu",
+        "Type": "Image",
+        "Thumbnail": "img10",
+        "Source": "img10",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 11",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img11",
+        "Source": "img11",
+        "Category": "Developpement"
+    },
+    {
+        "Title": "Title test 12",
+        "People": "Yu",
+        "Type": "Image",
+        "Thumbnail": "img12",
+        "Source": "img12",
+        "Category": "Storyline",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Text test",
+        "People": "Tim",
+        "Type": "Text",
+        "Thumbnail": "",
+        "Source": "",
+        "Category": "Storyline",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 14",
+        "People": "Anton",
+        "Type": "Image",
+        "Thumbnail": "img14",
+        "Source": "img14",
+        "Category": "Storyline"
+    },
+    {
+        "Title": "Title test 15",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "Title test 15",
+        "Source": "Title test 15",
+        "Category": "Material"
+    },
+    {
+        "Title": "Video name",
+        "People": "Yu",
+        "Type": "Video",
+        "Thumbnail": "Video name",
+        "Source": "Video name",
+        "Category": "Developpement",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Title test 1",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img1",
+        "Source": "img1",
+        "Category": "Final",
+        "Description": "Arsjad Rasjid (born 16 March 1970) is an Indonesian businessman who is president director of the mining and energy firm Indika Energy [id]. "
+    },
+    {
+        "Title": "Title test 2",
+        "People": "Yu",
+        "Type": "Image",
+        "Thumbnail": "img2",
+        "Source": "img2",
+        "Category": "Reference"
+    },
+    {
+        "Title": "Title test 3",
+        "People": "Yu",
+        "Type": "Image",
+        "Thumbnail": "img3",
+        "Source": "img3",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 4",
+        "People": "Tim",
+        "Type": "Image",
+        "Thumbnail": "img4",
+        "Source": "img4",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 5",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img5",
+        "Source": "img5",
+        "Category": "Material",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Title test 6",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img6",
+        "Source": "img6",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 7",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img7",
+        "Source": "img7",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 8",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img8",
+        "Source": "img8",
+        "Category": "Final",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 9",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img9",
+        "Source": "img9",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 10",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img10",
+        "Source": "img10",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 11",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img11",
+        "Source": "img11",
+        "Category": "Reference"
+    },
+    {
+        "Title": "Title test 12",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img12",
+        "Source": "img12",
+        "Category": "Storyline",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Text test",
+        "People": "Till",
+        "Type": "Text",
+        "Thumbnail": "",
+        "Source": "",
+        "Category": "Storyline",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 14",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img14",
+        "Source": "img14",
+        "Category": "Storyline"
+    },
+    {
+        "Title": "Title test 15",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img15",
+        "Source": "img15",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 16",
+        "People": "Till",
+        "Type": "Video",
+        "Thumbnail": "lavie",
+        "Source": "jtravailxlavie.mp4",
+        "Category": "Material",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Title test 1",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img1",
+        "Source": "img1",
+        "Category": "Final",
+        "Description": "Arsjad Rasjid (born 16 March 1970) is an Indonesian businessman who is president director of the mining and energy firm Indika Energy [id]. "
+    },
+    {
+        "Title": "Title test 2",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img2",
+        "Source": "img2",
+        "Category": "Reference"
+    },
+    {
+        "Title": "Title test 3",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img3",
+        "Source": "img3",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 4",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img4",
+        "Source": "img4",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 5",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img5",
+        "Source": "img5",
+        "Category": "Material",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Title test 6",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img6",
+        "Source": "img6",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 7",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img7",
+        "Source": "img7",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 8",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img8",
+        "Source": "img8",
+        "Category": "Final",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 9",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img9",
+        "Source": "img9",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 10",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img10",
+        "Source": "img10",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 11",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img11",
+        "Source": "img11",
+        "Category": "Reference"
+    },
+    {
+        "Title": "Title test 12",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img12",
+        "Source": "img12",
+        "Category": "Storyline",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Text test",
+        "People": "Till",
+        "Type": "Text",
+        "Thumbnail": "",
+        "Source": "",
+        "Category": "Storyline",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 14",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img14",
+        "Source": "img14",
+        "Category": "Storyline"
+    },
+    {
+        "Title": "Title test 15",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img15",
+        "Source": "img15",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 16",
+        "People": "Till",
+        "Type": "Video",
+        "Thumbnail": "lavie",
+        "Source": "jtravailxlavie.mp4",
+        "Category": "Material",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Title test 1",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img1",
+        "Source": "img1",
+        "Category": "Final",
+        "Description": "Arsjad Rasjid (born 16 March 1970) is an Indonesian businessman who is president director of the mining and energy firm Indika Energy [id]. "
+    },
+    {
+        "Title": "Title test 2",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img2",
+        "Source": "img2",
+        "Category": "Reference"
+    },
+    {
+        "Title": "Title test 3",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img3",
+        "Source": "img3",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 4",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img4",
+        "Source": "img4",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 5",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img5",
+        "Source": "img5",
+        "Category": "Material",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Title test 6",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img6",
+        "Source": "img6",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 7",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img7",
+        "Source": "img7",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 8",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img8",
+        "Source": "img8",
+        "Category": "Final",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 9",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img9",
+        "Source": "img9",
+        "Category": "Material",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 10",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img10",
+        "Source": "img10",
+        "Category": "Process",
+        "Description": "[13][14] The offensive took place in the disputed region of Nagorno-Karabakh, which is internationally recognized as a part of Azerbaijan, but populated by Armenians.[15][16] "
+    },
+    {
+        "Title": "Title test 11",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img11",
+        "Source": "img11",
+        "Category": "Reference"
+    },
+    {
+        "Title": "Title test 12",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img12",
+        "Source": "img12",
+        "Category": "Storyline",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    },
+    {
+        "Title": "Text test",
+        "People": "Till",
+        "Type": "Text",
+        "Thumbnail": "",
+        "Source": "",
+        "Category": "Storyline",
+        "Description": "The attacks occurred in the midst of an escalating crisis caused by Azerbaijan blockading the Republic of Artsakh, which has resulted in significant scarcities of essential supplies such as food, medicine, and other goods in the affected region.[17]"
+    },
+    {
+        "Title": "Title test 14",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img14",
+        "Source": "img14",
+        "Category": "Storyline"
+    },
+    {
+        "Title": "Title test 15",
+        "People": "Till",
+        "Type": "Image",
+        "Thumbnail": "img15",
+        "Source": "img15",
+        "Category": "Material"
+    },
+    {
+        "Title": "Title test 16",
+        "People": "Till",
+        "Type": "Video",
+        "Thumbnail": "lavie",
+        "Source": "jtravailxlavie.mp4",
+        "Category": "Material",
+        "Description": "He also serves as commissioner in several other companies, and is currently chairman of the Indonesian Chamber of Commerce and Industry for the 2021–2026 term. In September 2023, he was appointed as chairman of the 2024 presidential bid of Ganjar Pranowo. "
+    }
+]
