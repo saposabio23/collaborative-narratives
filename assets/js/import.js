@@ -156,16 +156,12 @@ function createBlock(row) {
     let source = document.createElement("img");
     source.src = 'images/' + row.Title + '.jpg';
     block.appendChild(source)
-    
+
     if (row.Description != 'undefined') {
       let description = document.createElement("p");
       description.innerHTML = row.Description;
       block.appendChild(description)
     }
-    else{
-
-    }
-
 
     aditionalElements(row, block)
 
@@ -256,14 +252,15 @@ function aditionalElements(row, block) {
     document.getElementById('cleanCounter').innerHTML = '(' + numbersOfBlock + ')'
     block.remove();
   })
-    
+
   numbersOfBlock++;
   document.getElementById('cleanCounter').innerHTML = '(' + numbersOfBlock + ')'
 
-  content.appendChild(block)
+  content.prepend(block)
 
   // SCROLL TO THE CURRENT BLOCK
-  block.scrollIntoView({ behavior: "smooth" });
+  content.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  // block.scrollIntoView({ behavior: "smooth" });
 
   // PAUSE WEHN HOVER THE DIVS
   // block.addEventListener('mouseenter', function (e) {
