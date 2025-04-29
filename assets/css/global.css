@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'rubikregular';
+    src: url('../fonts/Rubik/rubik-regular-webfont.woff2') format('woff2'),
+        url('../fonts/Rubik/rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'InstrumentalItalic';
+    src: url('../fonts/Instrumental/InstrumentSerif-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'InstrumentalRegular';
+    src: url('../fonts/Instrumental/InstrumentSerif-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+:root {
+    --spacing-l: 30px;
+    --spacing-m: 20px;
+    --spacing-s: 10px;
+
+    --color-primary: #40403d;
+    --color-secondary: snow;
+    --color-special: blue;
+
+    --color-primary-unchanged: #40403d;
+    --color-secondary-unchanged: snow;
+
+    --radius-s: 20px;
+
+    --trans-m: all .3s ease-in-out;
+    --trans-s: all .2s ease-in-out;
+}
+
+html,
+body,
+div,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    font-family: 'rubikregular', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+
+    background-color: var(--color-secondary);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/******************* TEXTE SELECTOR *******************/
+::-moz-selection {
+    background-color: var(--color-special);
+    color: var(--color-secondary-unchanged);
+}
+
+::selection {
+    background-color: var(--color-special);
+    color: var(--color-secondary-unchanged);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+    margin-bottom: var(--spacing-s);
+    display: flex;
+    gap: var(--spacing-s);
+    background-color: #40403d0a;
+    color: var(--color-secondary-unchanged);
+    border-radius: 17px;
+    padding: var(--spacing-s);
+    z-index: 999;
+}
+
+
+button {
+    border: none;
+    padding: 5px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: var(--spacing-s);
+    font-family: 'InstrumentalRegular';
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    border-radius: 7px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-special);
+    color: var(--color-secondary-unchanged);
+}

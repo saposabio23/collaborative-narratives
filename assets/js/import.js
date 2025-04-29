@@ -71,7 +71,7 @@ function launchGrid() {
           grid.setAttribute("data-type", row.Type);
 
           let thumbnail = document.createElement("img");
-          thumbnail.src = 'thumbnails/' + row.Title + '.jpg';
+          thumbnail.src = convertToImageLink(row.Source);
           grid.appendChild(thumbnail);
 
           fountain.appendChild(grid);
@@ -154,7 +154,7 @@ function createBlock(row) {
     headerBlock.appendChild(title)
 
     let source = document.createElement("img");
-    source.src = 'images/' + row.Title + '.jpg';
+    source.src = convertToImageLink(row.Source);
     block.appendChild(source)
 
     if (row.Description != 'undefined') {
@@ -360,11 +360,11 @@ let interval = 30;
 function stateScroll() {
   if (isPaused == true) {
     isPaused = false;
-    document.getElementById('buttonPlay').innerHTML = "PAUSE <span>[space]</span>"
+    document.getElementById('buttonPlay').innerHTML = "PAUSE"
   }
   else if (isPaused == false) {
     isPaused = true;
-    document.getElementById('buttonPlay').innerHTML = "RESUME <span>[space]</span>"
+    document.getElementById('buttonPlay').innerHTML = "RESUME"
   }
 }
 
@@ -405,8 +405,10 @@ addEventListener("keydown", (event) => {
 // START ALL
 function start() {
   startScroll();
-
   document.querySelector('.secondBack').style.display = "block";
+  document.getElementById('buttonStart').style.display = "none";
+  document.getElementById('buttonPlay').style.display = "block";
+
 
   rotateGadget.classList.add('fade')
   document.querySelector('.background > div').classList.add('erase')
@@ -459,3 +461,14 @@ launchGrid();
 //   }
 // }
 // })
+
+
+function convertToImageLink(link) {
+  const match = link.match(/\/d\/([^\/]+)\//);
+  if (match && match[1]) {
+    const fileId = match[1];
+    return `https://lh3.googleusercontent.com/d/${fileId}`;
+  } else {
+    return "Invalid Google Drive link";
+  }
+}
