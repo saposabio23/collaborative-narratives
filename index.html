@@ -6,175 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concluded</title>
 
-    <meta name="title" content="Collaborative Narratives">
+    <meta name="title" content="Concluded">
     <meta name="description" content="Our project emphasizes limitless creativity, blurring the lines between final output and ongoing
         evolution, and promoting holistic growth guided by principles of communication, documentation, humility,
         action, reflection, environmental consciousness, and global collaboration.">
     <meta name="author" content="Pablo Moreno">
-    <link rel="canonical" href="https://collaborative-narratives.online/">
+    <link rel="canonical" href="https://concluded.at">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 
-    <style>
-        .concluded img {
-            max-width: 90%;
-            width: 300px;
-        }
-
-        .concluded {
-            height: 100vh;
-            width: 100vw;
-            background-color: rgba(255, 255, 255, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            z-index: 99;
-        }
-
-
-        .video {}
-
-
-        .show {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            gap: var(--spacing-l);
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-        }
-
-        .show>div {
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h4 {
-            position: absolute;
-            font-family: 'InstrumentalRegular';
-            bottom: 0;
-            margin: 0;
-            left: 0;
-            width: 100%;
-            padding: var(--spacing-m);
-            background-color: #00000091;
-            color: var(--color-secondary);
-            background: linear-gradient(1deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        }
-
-        .block {
-            position: relative;
-        }
-
-        .frame {
-            height: 50vh;
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            aspect-ratio: 3/4;
-            overflow: hidden;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px 0px var(--color-primary);
-            background-color: var(--color-secondary);
-            position: relative;
-        }
-
-        .block a {
-            position: absolute;
-            top: -15px;
-            right: -15px;
-            background-color: var(--color-primary);
-            color: var(--color-secondary);
-            height: fit-content;
-            width: fit-content;
-            border-radius: 99px;
-            padding: 8px 12px;
-            display: flex;
-            align-items: center;
-            z-index: 99;
-        }
-
-        .show img,
-        .gallery img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-
-        /* the full-viewport wrapper */
-        #video-container {
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            background: black;
-            position: sticky;
-            top: 0;
-        }
-
-        /* center & scale the iframe to always cover */
-        #video-container iframe {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            /* these two lines make sure it always at least fills one dimension */
-            min-width: 100vw;
-            min-height: 100vh;
-            /* center it and crop the excess */
-            transform: translate(-50%, -50%);
-        }
-
-
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--spacing-m);
-            padding: var(--spacing-m) var(--spacing-m) calc(var(--spacing-m)*5) var(--spacing-m);
-            max-width: 970px;
-            margin: auto;
-        }
-
-        .gallery img {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        /* when active, make it cover the viewport */
-        .cover-fullscreen {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            width: 100vw !important;
-            height: 100vh !important;
-            object-fit: contain !important;
-            z-index: 9999 !important;
-            cursor: zoom-out !important;
-            transform: none !important;
-            background-color: #000000de;
-            backdrop-filter: blur(20px);
-        }
-    </style>
 </head>
 
 <body>
 
-    <nav>
+    <nav style="z-index: 8;">
         <button><a
                href="#collection">COLLECTION</a></button>
         <button><a
@@ -184,9 +37,10 @@
 
     </nav>
 
-    <div style="height: 200vh;">
+    <div style="height: 200vh; z-index: 10; position: relative;;">
         <div class="concluded">
-            <img src="logo.webp" alt="">
+            <img src="assets/logos/main.svg" alt="">
+            <p>A projects by <span style="opacity: .4;">Tim</span> with <span style="opacity: .4;">XXX</span></p>
         </div>
 
         <div id="video-container">
@@ -201,10 +55,18 @@
         </div>
     </div>
 
-    <div class="show" id="collection"></div>
+    <div class="show" id="collection">
+        <h2>Collection</h2>
 
-    <div class="gallery"></div>
 
+
+    </div>
+
+    <div class="gallery">
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
 
     <script>
 

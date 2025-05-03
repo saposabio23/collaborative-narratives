@@ -23,6 +23,15 @@
     font-display: swap
 }
 
+@font-face {
+    font-family: 'Zapfino';
+    src: url('../fonts/Zapfino/ZapfinoLinotypeOne.woff') format('woff'),
+        url('../fonts/Zapfino/ZapfinoLinotypeOne.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
 :root {
     --spacing-l: 30px;
     --spacing-m: 20px;
@@ -84,6 +93,7 @@ a {
 
 nav {
     position: fixed;
+
     bottom: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -93,11 +103,16 @@ nav {
     margin-bottom: var(--spacing-s);
     display: flex;
     gap: var(--spacing-s);
-    background-color: #40403d0a;
+    /* background-color: #00000017; */
     color: var(--color-secondary-unchanged);
     border-radius: 17px;
     padding: var(--spacing-s);
     z-index: 999;
+}
+
+nav button {
+    font-family: 'InstrumentalRegular' !important;
+    box-shadow: 0px 0px 10px 0px #40403d3d;
 }
 
 
