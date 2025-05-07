@@ -7,20 +7,21 @@ button {
 }
 
 .concluded img {
-    width: 120px;
+    height: 30px;
 }
 
 .concluded {
-    height: calc(var(--vh, 1vh) * 100);
+    /* height: calc(var(--vh, 1vh) * 100); */
     width: 100vw;
-    background-color: rgba(255, 255, 255, .8);
+    /* background-color: rgba(255, 255, 255, .8); */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+
+    align-items: start;
+    justify-content: space-between;
+    position: fixed;
     z-index: 99;
-    flex-direction: column;
     gap: var(--spacing-l);
+    padding: var(--spacing-m);
 
 }
 
@@ -37,7 +38,7 @@ button {
     align-content: center;
 
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-m);
+    gap: var(--spacing-s);
     padding: var(--spacing-m) var(--spacing-m) var(--spacing-m) var(--spacing-m);
     /*! max-width: 970px; */
 }
@@ -45,7 +46,7 @@ button {
 .show>div {
     /*! position: sticky; */
     top: 0;
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 60);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +66,7 @@ button {
 
     width: 100%;
     justify-content: center;
-    background-image: url(../logos/collection.jpeg);
+    background-image: url(../logos/bk-collection.png);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -95,7 +96,7 @@ h4 {
     padding: var(--spacing-m);
     background-color: #00000091;
     color: var(--color-secondary);
-    background: linear-gradient(1deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(1deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .block {
@@ -118,10 +119,10 @@ h4 {
 
 .block a {
     position: absolute;
-    top: -15px;
-    right: -15px;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    top: 5px;
+    right: 5px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
     height: fit-content;
     width: fit-content;
     border-radius: 99px;
@@ -135,6 +136,8 @@ h4 {
 
 .block a:hover {
     background-color: var(--color-special);
+    color: var(--color-secondary);
+
     transition: all .3s ease-in-out;
 }
 

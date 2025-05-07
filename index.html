@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concluded</title>
+    <title>Concluded.at</title>
 
     <meta name="title" content="Concluded">
     <meta name="description" content="Our project emphasizes limitless creativity, blurring the lines between final output and ongoing
@@ -27,7 +27,7 @@
 
 <body>
 
-    <nav style="z-index: 8;">
+    <nav>
         <button><a
                href="#collection">COLLECTION</a></button>
         <button><a
@@ -39,8 +39,8 @@
 
     <div style="height: 200vh; z-index: 10; position: relative;;">
         <div class="concluded">
+            <img src="assets/logos/logo.webp" alt="">
             <img src="assets/logos/main.svg" alt="">
-            <p>A projects by <span style="opacity: .4;">Tim</span> with <span style="opacity: .4;">XXX</span></p>
         </div>
 
         <div id="video-container">
@@ -56,7 +56,7 @@
     </div>
 
     <div class="show" id="collection">
-        <h2>Collection</h2>
+        <h2></h2>
 
 
 
@@ -82,24 +82,30 @@
                     block.className = 'block'
                     container.appendChild(block);
 
-                    let buy = document.createElement("a");
-                    buy.href = row.Link
-                    buy.innerHTML = 'Buy'
-                    block.appendChild(buy);
+                    if (row.Title == 'COPY') {
+                        block.style.visibility = 'hidden';
+                    }
+
+                    else {
+
+                        let buy = document.createElement("a");
+                        buy.href = row.Link
+                        buy.innerHTML = 'Buy'
+                        block.appendChild(buy);
 
 
-                    let frame = document.createElement("div");
-                    frame.className = 'frame'
-                    block.appendChild(frame);
+                        let frame = document.createElement("div");
+                        frame.className = 'frame'
+                        block.appendChild(frame);
 
-                    let title = document.createElement("h4");
-                    title.innerHTML = row.Title;
-                    frame.appendChild(title);
+                        let title = document.createElement("h4");
+                        title.innerHTML = row.Title;
+                        frame.appendChild(title);
 
-                    let image = document.createElement("img");
-                    image.src = convertToImageLink(row.Source);
-                    frame.appendChild(image);
-
+                        let image = document.createElement("img");
+                        image.src = convertToImageLink(row.Source);
+                        frame.appendChild(image);
+                    }
 
                 });
             });
