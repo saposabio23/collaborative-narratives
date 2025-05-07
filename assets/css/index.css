@@ -119,8 +119,8 @@ h4 {
 
 .block a {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: var(--spacing-s);
+    right: var(--spacing-s);
     background-color: var(--color-secondary);
     color: var(--color-primary);
     height: fit-content;
