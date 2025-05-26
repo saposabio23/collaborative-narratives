@@ -100,7 +100,7 @@ nav {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 2;
-    margin-bottom: var(--spacing-s);
+    margin-bottom: 20px;
     display: flex;
     gap: var(--spacing-s);
     /* background-color: #00000017; */
@@ -110,10 +110,6 @@ nav {
     z-index: 999;
 }
 
-nav button {
-    font-family: 'InstrumentalRegular' !important;
-    box-shadow: 0px 0px 10px 0px #40403d3d;
-}
 
 
 button {
@@ -122,7 +118,7 @@ button {
     background-color: var(--color-secondary);
     color: var(--color-primary);
     padding: var(--spacing-s);
-    font-family: 'InstrumentalRegular';
+    /* font-family: 'InstrumentalRegular'; */
 
     display: -webkit-box;
 
@@ -138,7 +134,13 @@ button {
     width: -moz-fit-content;
     width: fit-content;
 
+    font-family: Arial, Helvetica, sans-serif !important;
 }
+
+nav button {
+    box-shadow: 0px 0px 10px 0px #40403d3d;
+}
+
 
 button:hover {
     cursor: pointer;
