@@ -175,7 +175,7 @@ h4 {
 #credits span {
     font-family: 'Zapfino';
     font-size: 120%;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 
@@ -200,6 +200,7 @@ h4 {
     min-height: calc(var(--vh, 1vh) * 100);
     /* center it and crop the excess */
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 
@@ -252,5 +253,19 @@ h4 {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 
+    .show>h2 {
+        height: 70vh;
+    }
 
+    .show>div {
+        height: calc(var(--vh, 1vh) * 40);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #credits {
+        padding: 30px 20px 100px 20px;
+    }
 }
