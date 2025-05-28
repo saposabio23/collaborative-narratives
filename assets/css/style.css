@@ -130,7 +130,7 @@ h1 {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 2;
     padding: var(--spacing-s);
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;

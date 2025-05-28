@@ -1,5 +1,17 @@
 console.log('Handmade by Pablo Moreno ⚡️ www.pablo.energy ⚡️ september 2023')
 
+
+function convertToImageLink(link) {
+  const match = link.match(/\/d\/([^\/]+)\//);
+  if (match && match[1]) {
+    const fileId = match[1];
+    return `https://lh3.googleusercontent.com/d/${fileId}`;
+  } else {
+    return "Invalid Google Drive link";
+  }
+}
+
+
 var rotateGadget = document.getElementById('rotateGadget');
 var content = document.querySelector('.content');
 
@@ -11,7 +23,7 @@ function launchGrid() {
 
 
   fetch(
-    "https://opensheet.elk.sh/1IFYgWa27f1VhCskcDEsuCo40eLTc1djdonULdSEGX6Q/1")
+    "https://opensheet.elk.sh/1IFYgWa27f1VhCskcDEsuCo40eLTc1djdonULdSEGX6Q/DATA")
     .then((res) => res.json())
     .then((data) => {
 
@@ -71,7 +83,8 @@ function launchGrid() {
           grid.setAttribute("data-type", row.Type);
 
           let thumbnail = document.createElement("img");
-          thumbnail.src = convertToImageLink(row.Source);
+          thumbnail.src = convertToImageLink(row.Image);
+
           grid.appendChild(thumbnail);
 
           fountain.appendChild(grid);
@@ -154,7 +167,7 @@ function createBlock(row) {
     headerBlock.appendChild(title)
 
     let source = document.createElement("img");
-    source.src = convertToImageLink(row.Source);
+    source.src = convertToImageLink(row.Image);
     block.appendChild(source)
 
     if (row.Description != 'undefined') {
@@ -463,12 +476,4 @@ launchGrid();
 // })
 
 
-function convertToImageLink(link) {
-  const match = link.match(/\/d\/([^\/]+)\//);
-  if (match && match[1]) {
-    const fileId = match[1];
-    return `https://lh3.googleusercontent.com/d/${fileId}`;
-  } else {
-    return "Invalid Google Drive link";
-  }
-}
+
