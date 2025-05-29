@@ -1,29 +1,4 @@
 @font-face {
-    font-family: 'rubikregular';
-    src: url('../fonts/Rubik/rubik-regular-webfont.woff2') format('woff2'),
-        url('../fonts/Rubik/rubik-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'InstrumentalItalic';
-    src: url('../fonts/Instrumental/InstrumentSerif-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'InstrumentalRegular';
-    src: url('../fonts/Instrumental/InstrumentSerif-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
     font-family: 'Zapfino';
     src: url('../fonts/Zapfino/ZapfinoLinotypeOne.woff') format('woff'),
         url('../fonts/Zapfino/ZapfinoLinotypeOne.woff2') format('woff2');
@@ -63,7 +38,7 @@ p {
 
 html {
     text-rendering: optimizeLegibility;
-    font-family: 'rubikregular', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
 

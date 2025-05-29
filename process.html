@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Collaborative Narratives</title>
+    <title>Process</title>
 
     <meta name="title" content="Collaborative Narratives">
     <meta name="description" content="Our project emphasizes limitless creativity, blurring the lines between final output and ongoing
@@ -30,14 +30,16 @@
     <div class="secondBack"></div>
 
     <div class="background">
-        <div>
+        <div class="textIntro">
             <h1>COLLABORATIVE NARRATIVES</h1>
             <p>Our project emphasizes limitless creativity, blurring the lines between final output and ongoing
                 evolution, and promoting holistic growth guided by principles of communication, documentation, humility,
                 action, reflection, environmental consciousness, and global collaboration</p>
+            <button onclick="start()" id="buttonStart">PLAY</button>
+
         </div>
 
-        <div id="rotateGadget" onclick="start()" src="assets/logos/back.svg" preload="auto">
+        <div id="rotateGadget" onclick="start()" src="assets/logos/process.png" preload="auto">
         </div>
     </div>
 
@@ -113,7 +115,6 @@
 
         <div class="fixHeader">
             <!-- <button onclick="restarGrid()" id="randomButton">Random</button> -->
-            <button onclick="start()" id="buttonStart">PLAY</button>
             <button onclick="stateScroll()" id="buttonPlay">PAUSE</button>
             <button onclick="cleanBlocks()" id="buttonClean">CLEAN&nbsp;<div id="cleanCounter">(0)</div></button>
             <button onclick="switchColors()" id="buttonSwitch">SWITCH</button>
